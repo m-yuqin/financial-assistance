@@ -16,8 +16,8 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
 - Git installed
 
 ## Database Setup and Installation
-Download PostgreSQL V17.0 from https://www.enterprisedb.com/downloads/postgres-postgresql-downloads and install
-Download pgAdmin4 from https://www.pgadmin.org/download/pgadmin-4-windows/ and install
+- Download PostgreSQL V17.0 from https://www.enterprisedb.com/downloads/postgres-postgresql-downloads and install
+- Download pgAdmin4 from https://www.pgadmin.org/download/pgadmin-4-windows/ and install
 1)	Open pgAdmin:
 2)	Launch pgAdmin and connect to your PostgreSQL server.
 3)	In the pgAdmin interface, right-click on the "Databases" section in the left-hand tree, select Create > Database
