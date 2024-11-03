@@ -45,7 +45,7 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
    DB_PORT=your_database_port_number
    JWT_SECRET=your_jwt_secret
 
-3. In Visual Studio Code terminal, cd <repository-directory>
+3. In Visual Studio Code terminal, cd \<repository-directory\>
 4. If you wish to generate a new JWT_SECRET, you can delete the JWT_SECRET line in .env file and run the script generateSecret.js using Node.js in vscode:
     
     node generateSecret.js
