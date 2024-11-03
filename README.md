@@ -38,11 +38,11 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
    In Visual Studio Code, select "Clone Git Repository" and enter the URL https://github.com/m-yuqin/financial-assistance.git
    OR use command git clone https://github.com/m-yuqin/financial-assistance.git
 2. Open .env file and update the variables inside according to the credentials you created for your PostgreSQL database.
-   DB_USER=your_username
-   DB_HOST=localhost
-   DB_NAME=your_database
-   DB_PASS=your_password
-   DB_PORT=your_database_port_number
+   DB_USER=your_username<br>
+   DB_HOST=localhost<br>
+   DB_NAME=your_database<br>
+   DB_PASS=your_password<br>
+   DB_PORT=your_database_port_number<br>
    JWT_SECRET=your_jwt_secret
 
 4. In Visual Studio Code terminal, cd \<repository-directory\>
