@@ -1,0 +1,45 @@
+CREATE TABLE administrators (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    role VARCHAR(20) DEFAULT 'admin'
+);
+
+CREATE TABLE applicants (
+    nric VARCHAR(9) PRIMARY KEY,
+    name VARCHAR(100),
+    employment_status VARCHAR(20),
+    retrenchment_status CHAR(1) DEFAULT 'n' CHECK (retrenchment_status IN ('y', 'n')),
+    date_retrenched DATE,
+    marital_status VARCHAR(20),
+    date_of_birth DATE,
+    household_size INTEGER,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE household_members (
+    nric VARCHAR(9) PRIMARY KEY,
+    applicant_nric VARCHAR(9) REFERENCES applicants(nric),
+    name VARCHAR(100),
+    relation VARCHAR(20),
+    date_of_birth DATE,
+    employment_status VARCHAR(20)
+);
+CREATE TABLE schemes (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT,
+    eligibility_criteria JSONB,
+    benefits JSONB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE applications (
+    id SERIAL PRIMARY KEY,
+    applicant_nric VARCHAR(9) REFERENCES applicants(nric),
+    scheme_id INTEGER REFERENCES schemes(id),
+    status VARCHAR(20),
+    outcome JSONB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
