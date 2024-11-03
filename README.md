@@ -50,6 +50,8 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
     
     node generateSecret.js
 
+    This will generate a new JWT_SECRET and automatically append it to the .env file.
+
 6. Run command "npm start" in the terminal to start the server
 7. In your web browser, navigate to http://localhost:3000/api-docs/
 
