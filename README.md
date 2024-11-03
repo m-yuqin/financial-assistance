@@ -37,10 +37,21 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
 1. **Clone the repository:**
    In Visual Studio Code, select "Clone Git Repository" and enter the URL https://github.com/m-yuqin/financial-assistance.git
    OR use command git clone https://github.com/m-yuqin/financial-assistance.git
-   
-2. In Visual Studio Code terminal, cd <repository-directory>
-3. Run command "npm start" in ther terminal to start the server
-4. In your web browser, navigate to http://localhost:3000/api-docs/
+2. Open .env file and update the variables inside according to the credentials you created for your PostgreSQL database.
+   DB_USER=your_username
+   DB_HOST=localhost
+   DB_NAME=your_database
+   DB_PASS=your_password
+   DB_PORT=your_database_port_number
+   JWT_SECRET=your_jwt_secret
+
+3. In Visual Studio Code terminal, cd <repository-directory>
+4. If you wish to generate a new JWT_SECRET, you can delete the JWT_SECRET line in .env file and run the script generateSecret.js using Node.js in vscode:
+    
+    node generateSecret.js
+
+5. Run command "npm start" in the terminal to start the server
+6. In your web browser, navigate to http://localhost:3000/api-docs/
 
 ### Testing the API Endpoints
 1. Open a browser and navigate to http://localhost:3000/api-docs/
