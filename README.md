@@ -45,13 +45,13 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
    DB_PORT=your_database_port_number
    JWT_SECRET=your_jwt_secret
 
-3. In Visual Studio Code terminal, cd \<repository-directory\>
-4. If you wish to generate a new JWT_SECRET, you can delete the JWT_SECRET line in .env file and run the script generateSecret.js using Node.js in vscode:
+4. In Visual Studio Code terminal, cd \<repository-directory\>
+5. If you wish to generate a new JWT_SECRET, you can delete the JWT_SECRET line in .env file and run the script generateSecret.js using Node.js in vscode:
     
     node generateSecret.js
 
-5. Run command "npm start" in the terminal to start the server
-6. In your web browser, navigate to http://localhost:3000/api-docs/
+6. Run command "npm start" in the terminal to start the server
+7. In your web browser, navigate to http://localhost:3000/api-docs/
 
 ### Testing the API Endpoints
 1. Open a browser and navigate to http://localhost:3000/api-docs/
