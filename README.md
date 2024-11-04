@@ -38,7 +38,7 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
    In Visual Studio Code, select "Clone Git Repository" and enter the URL https://github.com/m-yuqin/financial-assistance.git
    OR use command git clone https://github.com/m-yuqin/financial-assistance.git
 2. Open .env file and update the variables inside according to the credentials you created for your PostgreSQL database.
-   DB_USER=your_username<br>
+   <br>DB_USER=your_username<br>
    DB_HOST=localhost<br>
    DB_NAME=your_database<br>
    DB_PASS=your_password<br>
@@ -61,8 +61,7 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
 3. Login as an administrator and note down the JWT Token returned
 4. On the top right hand, there's a button named "Authorize", click on it and enter the JWT Token generated in the previous step
 5. Create a new scheme using the example provided in http://localhost:3000/api-docs/
-6. Create a new applicant using the example provided in http://localhost:3000/api-docs/
-   Please note that for the applicant to be eligible for the Retrenchment Assistance Scheme, date_retrenched needs to be within one year to qualify.
+6. Create a new applicant using the example provided in http://localhost:3000/api-docs/<br>Please note that for the applicant to be eligible for the Retrenchment Assistance Scheme, date_retrenched needs to be within one year to qualify.
 7. Get eligible schemes for the applicant created
 8. Create a new application for the applicant using the example provided in http://localhost:3000/api-docs/
 9. Save the outcome of the application by executing the example provided in POST /applications/outcome
