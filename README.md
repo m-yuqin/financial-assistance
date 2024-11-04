@@ -64,5 +64,5 @@ This is a RESTful API for managing beneficiaries, schemes, and applications for 
 6. Create a new applicant using the example provided in http://localhost:3000/api-docs/
 7. Get eligible schemes for the applicant created
 8. Create a new application for the applicant using the example provided in http://localhost:3000/api-docs/
-9. Save the outcome of the application by executing the example provided in http://localhost:3000/api-docs/
+9. Save the outcome of the application by executing the example provided in POST /applications/outcome
 10. Test all other endpoints
